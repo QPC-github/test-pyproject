@@ -1,0 +1,7 @@
+name: CI
+on: [push, pull_request, workflow_dispatch]
+
+jobs: 
+  ci:
+    uses: nccgroup/test-workflow-templates/.github/workflows/ci-template.yml@main
+    secrets: inherit
